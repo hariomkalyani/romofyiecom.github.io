@@ -1,0 +1,615 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <!-- basic -->
+   <meta charset="utf-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <!-- mobile metas -->
+   <meta name="viewport" content="width=device-width, initial-scale=1">
+   <meta name="viewport" content="initial-scale=1, maximum-scale=1">
+   <!-- site metas -->
+   <title>romofyi</title>
+   <meta name="keywords" content="">
+   <meta name="description" content="">
+   <meta name="author" content="">
+   <!-- bootstrap css -->
+   <link rel="stylesheet" href="css/bootstrap.min.css">
+   <!-- style css -->
+   <link rel="stylesheet" href="css/style.css">
+   <!-- Responsive-->
+   <link rel="stylesheet" href="css/responsive.css">
+   <!-- fevicon -->
+   <link rel="icon" href="images/fevicon.png" type="image/gif" />
+   <!-- Scrollbar Custom CSS -->
+   <link rel="stylesheet" href="css/jquery.mCustomScrollbar.min.css">
+   <!-- Tweaks for older IEs-->
+   <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css">
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/jquery.fancybox.min.css"
+      media="screen">
+   <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script><![endif]-->
+</head>
+<!-- body -->
+
+<body class="main-layout">
+   <!-- loader  -->
+   <div class="loader_bg">
+      <div class="loader"><img src="images/loading.gif" alt="#" /></div>
+   </div>
+   <!-- end loader -->
+   <!-- header -->
+   <header>
+      <!-- header inner -->
+      <div class="header">
+         <div class="header_top d_none1">
+            <div class="container">
+               <div class="row">
+                  <div class="col-md-4">
+                     <ul class="conta_icon ">
+                        <li><a href="#"><img src="images/call.png" alt="#" />Call us: +91 9876543210</a> </li>
+                     </ul>
+                  </div>
+                  <div class="col-md-4">
+                     <ul class="social_icon">
+                        <li> <a href="#"><i class="fa fa-facebook" aria-hidden="true"></i>
+                           </a>
+                        </li>
+                        <li> <a href="#"><i class="fa fa-twitter"></i></a></li>
+                        <li> <a href="#"> <i class="fa fa-linkedin" aria-hidden="true"></i></a></li>
+                        <li> <a href="#"><i class="fa fa-instagram" aria-hidden="true"></i>
+                           </a>
+                        </li>
+                     </ul>
+                  </div>
+                  <div class="col-md-4">
+                     <div class="se_fonr1">
+                        <form action="#">
+                           <div class="select-box">
+                              <label for="select-box1" class="label select-box1"><span class="label-desc">English</span>
+                              </label>
+                              <select id="select-box1" class="select">
+                                 <option value="Choice 1">English</option>
+                                
+                              </select>
+                           </div>
+                        </form>
+                        
+
+
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+         <div class="header_midil">
+            <div class="container">
+               <div class="row d_flex">
+                  <div class="col-md-4">
+                     <ul class="conta_icon d_none1">
+                        <li><a href="#"><img src="images/email.png" alt="#" /> support@romofyi.com</a> </li>
+                     </ul>
+                  </div>
+                  <div class="col-md-4">
+                     <a class="logo" href="#"><img src="images/logo.png" alt="#" /></a>
+                  </div>
+                  <div class="col-md-4">
+  <ul class="right_icon d_none1">
+                           <li><a href="#"><img src="images/shopping.png" alt="#"/></a> </li>
+                           <a href="#" class="order">Order Now</a> 
+                        </ul>
+                  </div>
+               </div>
+            </div>
+         </div>
+         <div class="header_bottom">
+            <div class="container">
+               <div class="row">
+                  <div class="col-xl-8 col-lg-8 col-md-8 col-sm-8">
+                     <nav class="navigation navbar navbar-expand-md navbar-dark ">
+                        <button class="navbar-toggler" type="button" data-toggle="collapse"
+                           data-target="#navbarsExample04" aria-controls="navbarsExample04" aria-expanded="false"
+                           aria-label="Toggle navigation">
+                           <span class="navbar-toggler-icon"></span>
+                        </button>
+                        <div class="collapse navbar-collapse" id="navbarsExample04">
+                           <ul class="navbar-nav mr-auto">
+                              <li class="nav-item active">
+                                 <a class="nav-link" href="index.html">Home</a>
+                              </li>
+                              <li class="nav-item">
+                                 <a class="nav-link" href="about.html">About</a>
+                              </li>
+                              <li class="nav-item">
+                                 <a class="nav-link" href="product1.html">Products</a>
+                              </li>
+                              <li class="nav-item">
+                                 <a class="nav-link" href="http://localhost/hariom/registration.php">Log in</a>
+                              </li>
+                              <li class="nav-item">
+                                 <a class="nav-link" href="news.html">News</a>
+                              </li>
+                              <li class="nav-item">
+                                 <a class="nav-link" href="contactus.html">Contact Us</a>
+                              </li>
+                           </ul>
+                        </div>
+                     </nav>
+                  </div>
+                   <div class="col-md-4">
+                        <div class="search">
+                            <form id="search-form">
+  <input type="text" id="search-input" placeholder="Search">
+  <button type="submit" id="search-button">Search</button>
+</form>
+<script>
+// Get the form, input and button elements
+const searchForm = document.getElementById('search-form');
+const searchInput = document.getElementById('search-input');
+const searchButton = document.getElementById('search-button');
+
+// Add an event listener to the form for when it is submitted
+searchForm.addEventListener('submit', (event) => {
+  // Prevent the form from submitting and refreshing the page
+  event.preventDefault();
+
+  // Get the value of the search input
+  const searchTerm = searchInput.value;
+
+  // Check if the search term matches a specific page and redirect if it does
+  if (searchTerm === 'tv') {
+    window.location.href = 'file:///C:/xampp/htdocs/hariom/product1.html';
+  } else if (searchTerm === 'smart tvs') {
+    window.location.href = 'file:///C:/xampp/htdocs/hariom/product1.html';
+  }
+else if (searchTerm === 'android tvs') {
+    window.location.href = 'file:///C:/xampp/htdocs/hariom/product1.html';
+  }
+else if (searchTerm === 'smart tvs') {
+    window.location.href = 'file:///C:/xampp/htdocs/hariom/product1.htmll';
+  }
+else if (searchTerm === 'running shoes') {
+    window.location.href = 'file:///C:/xampp/htdocs/hariom/product2.html';
+  }
+else if (searchTerm === 'shoes') {
+    window.location.href = 'file:///C:/xampp/htdocs/hariom/product2.html';
+  }
+else if (searchTerm === 'sports shoes') {
+    window.location.href = 'file:///C:/xampp/htdocs/hariom/product2.html';
+  }
+else if (searchTerm === 'smart phones') {
+    window.location.href = '/product3.html';
+  }
+else if (searchTerm === 'phones') {
+    window.location.href = 'file:///C:/xampp/htdocs/hariom/product3.html';
+  }
+else if (searchTerm === 'mobile phones') {
+    window.location.href = 'file:///C:/xampp/htdocs/hariom/product3.html';
+  }
+else if (searchTerm === 'laptops') {
+    window.location.href = 'file:///C:/xampp/htdocs/hariom/product4.html';
+  }
+else if (searchTerm === 'budget laptops') {
+    window.location.href = '/product4.html';
+  }
+
+
+
+
+
+ else {
+    // If the search term doesn't match any specific page, show an error message
+    alert('No results found for your search term.');
+  }
+});
+</script>
+
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+   </header>
+   <!-- end header inner -->
+   <!-- end header -->
+   <!-- banner -->
+   <section class="banner_main">
+      <div class="container">
+         <div class="row">
+            <div class="col-md-8">
+               <div class="text-bg">
+                  <h1> <span class="blodark"> Romofyi </span> <br>Trends 2023</h1>
+                  <p>A huge fashion collection for ever </p>
+                  <a class="read_more" href="https://www.amazon.in/ref=nav_logo">Amazon</a>
+                  <a class="read_more" href="https://www.flipkart.com/">Flipkart</a>
+               </div>
+            </div>
+            <div class="col-md-4">
+               <div class="ban_img">
+                  <figure><img src="images/ban_img.png" alt="#" /></figure>
+               </div>
+            </div>
+         </div>
+      </div>
+   </section>
+   <!-- end banner -->
+   <!-- six_box section -->
+   <div class="six_box">
+      <div class="container-fluid">
+         <div class="row">
+            <div class="col-md-2 col-sm-4 pa_left">
+               <div class="six_probpx yellow_bg">
+                  <a href="https://amzn.to/3GtQeBl" target="_blank"><i><img src="images/shoes.png" alt="#" /></i></a>
+                  <span>Shoes</span>
+               </div>
+            </div>
+            <div class="col-md-2 col-sm-4 pa_left">
+               <div class="six_probpx bluedark_bg">
+                  <a href="https://amzn.to/3KNhMo0" target="_blank"><i><img src="images/helbet.png" alt="#" /></i></a>
+                  <span>Top & hat</span>
+               </div>
+            </div>
+            <div class="col-md-2 col-sm-4 pa_left">
+               <div class="six_probpx yellow_bg">
+                  <a href="https://amzn.to/43jwCcN" target="_blank"><i><img src="images/pent.png" alt="#" /></i></a>
+                  <span>Pant & socks</span>
+               </div>
+            </div>
+            <div class="col-md-2 col-sm-4 pa_left">
+               <div class="six_probpx bluedark_bg">
+                  <a href="https://amzn.to/3zLJNWG"><i><img src="images/t_shart.png" alt="#" /></i></a>
+                  <span>T-shirt & tankstop</span>
+               </div>
+            </div>
+            <div class="col-md-2 col-sm-4 pa_left">
+               <div class="six_probpx yellow_bg">
+                  <a href="https://amzn.to/3KKlpL3" target="_blank"><i><img src="images/jakit.png" alt="#" /></i></a>
+                  <span>cardigans & jumpers</span>
+               </div>
+            </div>
+            <div class="col-md-2 col-sm-4 pa_left">
+               <div class="six_probpx bluedark_bg">
+                  <a href="https://amzn.to/3ZUbhDV" target="_blank"><i><img src="images/shoes.png" alt="#" /></i></a>
+                  <span>Casual Shoes</span>
+               </div>
+            </div>
+         </div>
+      </div>
+   </div>
+   <!-- end six_box section -->
+   <!-- project section -->
+   <div id="project" class="project">
+      <div class="container">
+         <div class="row">
+            <div class="col-md-12">
+               <div class="titlepage">
+                  <h2>Featured Products</h2>
+               </div>
+            </div>
+         </div>
+         <div class="row">
+            <div class="product_main">
+
+               <div class="project_box ">
+                  <div class="dark_white_bg"><img src="images/shoeproduct1.png" alt="#" /></div>
+                  <h3>BRUTON Men's Sports Shoes Sports</h3><br>
+                  <a href="https://amzn.to/41hYrRb" target="_blank"><button class="amazon"> shop on amazon ₹229
+                     </button></a><br>
+                  <a href="https://www.flipkart.com/birde-premium-sports-shoes-men-walking/p/itm3902c0877e45f?pid=SHOFZEWUBGEHKREM&lid=LSTSHOFZEWUBGEHKREMYOOZ2T&marketplace=FLIPKART&q=trending+sports+shoes&store=osp%2Fcil%2F1cu&srno=s_1_2&otracker=search&otracker1=search&fm=Search&iid=c3baf46b-23ba-4f11-ac21-12cebbb950aa.SHOFZEWUBGEHKREM.SEARCH&ppt=sp&ppn=sp&ssid=xaeotzl5740000001681034604498&qH=ae79659037a34bcd"
+                     target="_blank"><button class="flipkart"> shop on flipkart ₹379 </button></a>
+               </div>
+
+               <div class="project_box ">
+                  <div class="dark_white_bg"><img src="images/shoeproduct2.png" alt="#" /></div>
+                  <h3>FURO Mens R1014 794 Running Shoe</h3><br>
+                  <a href="https://amzn.to/3zK9Tta" target="_blank"><button class="amazon">shop on amazon ₹1,099
+                     </button></a>
+                  <a href="https://www.flipkart.com/furo-red-chief-running-sports-shoes-casuals-men/p/itmf3yyszgqgskzg?pid=SHOFY9EMMXXGJMQH&lid=LSTSHOFY9EMMXXGJMQHCMBZU7&marketplace=FLIPKART&q=Running+Sports+Shoes+Casuals+For+Men++%28Navy%2C+Blue%29&store=osp%2Fcil%2F1cu&srno=s_1_1&otracker=search&otracker1=search&fm=Search&iid=c25c24ba-a324-4d50-8af0-bbec614e7fba.SHOFY9EMMXXGJMQH.SEARCH&ppt=sp&ppn=sp&ssid=ljikdmc8z40000001681036958437&qH=1f7cc3684a9e589d"
+                     target="_blank"><button class="flipkart">shop on flipkart ₹1,099</button></a>
+               </div>
+
+               <div class="project_box">
+                  <div class="dark_white_bg"><img src="images/shoeproduct3.png" alt="#" /></div>
+                  <h3>Sparx Mens Sm-702 Sneaker</h3><br>
+                  <a href="https://amzn.to/3zJ3Kx7" target="_blank"><button class="amazon">shop on amazon
+                        ₹749</button></a>
+                  <a href="https://www.flipkart.com/sparx-sm-702-running-shoes-men/p/itmcdf691ec1c2fb?pid=SHOGCVYMDTKXP5JS&lid=LSTSHOGCVYMDTKXP5JSMOWPAJ&marketplace=FLIPKART&q=Sparx+&store=search.flipkart.com&srno=s_1_4&otracker=search&otracker1=search&fm=Search&iid=f1794b01-05ed-4d08-8338-13185f1e1fa5.SHOGCVYMDTKXP5JS.SEARCH&ppt=sp&ppn=sp&ssid=ggaejxd43k0000001681037431811&qH=652f224a5d6900b7"
+                     target="_blank"><button class="flipkart">shop on flipkart ₹749</button></a>
+               </div>
+
+               <div class="project_box">
+                  <div class="dark_white_bg"><img src="images/shoeproduct4.png" alt="#" /></div>
+                  <h3>Nike Mens Revolution 6 Nn Sneaker</h3><br>
+                  <a href="https://amzn.to/3zGCL5k" target="_blank"><button class="amazon">shop on amazon
+                        ₹2,586</button></a>
+                  <a href="https://www.flipkart.com/nike-revolution-6-nn-running-shoes-men/p/itm16a80d50d418e?pid=SHOGKV3JVWZCQXXH&lid=LSTSHOGKV3JVWZCQXXHVX0KGT&marketplace=FLIPKART&q=Nike+Mens+Revolution+6+Nn+%7CSports+Shoes-Men+Sneaker&store=osp%2Fcil%2F1cu&srno=s_1_1&otracker=search&otracker1=search&fm=Search&iid=6df89e64-d885-4697-a6a7-bd892c7b86fb.SHOGKV3JVWZCQXXH.SEARCH&ppt=sp&ppn=sp&ssid=qs9t5lfuhs0000001681038060763&qH=fb05685f19185a13"
+                     target="_blank"><button class="flipkart">shop on flipkart ₹2,586</button></a>
+               </div>
+
+               <div class="project_box">
+                  <div class="dark_white_bg"><img src="images/shoeproduct5.png" alt="#" /></div>
+                  <h3>Short Openwork Cardigan $120.00</h3><br>
+                  <a href="https://amzn.to/3mrAesF" target="_blank"><button class="amazon">shop on amazon
+                        ₹9,899</button></a>
+                  <a href="https://www.flipkart.com/puma-explore-nitro-running-shoes-men/p/itmb4d0d8e665ad8?pid=SHOGHQ7WCJDZGQSB&lid=LSTSHOGHQ7WCJDZGQSBOONNOW&marketplace=FLIPKART&q=puma+shoes&store=osp&srno=s_1_9&otracker=search&otracker1=search&fm=Search&iid=0aee4ec4-c801-4889-86b8-44e7e870282e.SHOGHQ7WCJDZGQSB.SEARCH&ppt=sp&ppn=sp&ssid=mrvnwv2b0w0000001681038457064&qH=12daa41359850f83"
+                     target="_blank"><button class="flipkart">shop on flipkart ₹5,279</button></a>
+               </div>
+
+
+               <div class="project_box ">
+                  <div class="dark_white_bg"><img src="images/mobile1.png" alt="#" /></div>
+                  <h3>Apple iPhone 13 (128GB) - Midnight</h3><br>
+                  <a href="https://amzn.to/3Mq4rTx" target="_blank"><button class="amazon">shop on amazon
+                        ₹62,999</button></a>
+                  <a href="https://www.flipkart.com/apple-iphone-13-midnight-128-gb/p/itmca361aab1c5b0?pid=MOBG6VF5Q82T3XRS&lid=LSTMOBG6VF5Q82T3XRSOXJLM9&marketplace=FLIPKART&q=iphone+13&store=tyy%2F4io&srno=s_1_3&otracker=search&otracker1=search&fm=Search&iid=02984a74-eef0-4efc-8301-9d1304e4e2fd.MOBG6VF5Q82T3XRS.SEARCH&ppt=sp&ppn=sp&ssid=uhsmjh0l340000001681039298134&qH=c68a3b83214bb235"
+                     target="_blank"><button class="flipkart">shop on flipkart ₹62,999</button></a>
+               </div>
+
+               <div class="project_box ">
+                  <div class="dark_white_bg"><img src="images/watch1.png" alt="#" width="120px" /></div>
+                  <h3>Casio Enticer Men Analog Silver Dial Watch</h3><br>
+                  <a href="https://amzn.to/3o0FF25" target="_blank"><button class="amazon">shop on amazon
+                        ₹3,495</button></a>
+                  <a href="https://www.flipkart.com/casio-mtp-1381d-1avdf-enticer-men-s-analog-watch-men/p/itmf3zh5np9ncf4h?pid=WATEHS7EQB8ANEYR&lid=LSTWATEHS7EQB8ANEYRJ5XCIM&marketplace=FLIPKART&q=casio&store=search.flipkart.com&srno=s_1_30&otracker=search&otracker1=search&fm=Search&iid=e108b636-5c2b-4d93-bd50-1401c573e489.WATEHS7EQB8ANEYR.SEARCH&ppt=sp&ppn=sp&ssid=7d8780zjds0000001681043626380&qH=b4b1a123fdbfc453"
+                     target="_blank"><button class="flipkart">shop on flipkart ₹3,495</button></a>
+               </div>
+
+               <div class="project_box">
+                  <div class="dark_white_bg"><img src="images/camera1.png" alt="#" width="180px" /></div>
+                  <h3>Canon EOS 3000D DSLR Camera</h3><br>
+                  <a href="https://amzn.to/41aCjbh" target="_blank"><button class="amazon">shop on amazon
+                        ₹29,500</button></a>
+                  <a href="https://www.flipkart.com/canon-eos-3000d-dslr-camera-1-body-18-55-mm-lens/p/itm6f665fea97bc2?pid=CAMF3DHJURPEMNRN&lid=LSTCAMF3DHJURPEMNRN8AVERV&marketplace=FLIPKART&q=dslr&store=jek%2Fp31%2Ftrv&srno=s_1_1&otracker=search&otracker1=search&fm=Search&iid=6b83086b-e5aa-421f-b074-8a0d67c8805d.CAMF3DHJURPEMNRN.SEARCH&ppt=sp&ppn=sp&ssid=q4dx8ex2yo0000001681045209962&qH=ac7edfe844c3c5f1"
+                     target="_blank"><button class="flipkart">shop on flipkart ₹29,999</button></a>
+               </div>
+
+               <div class="project_box">
+                  <div class="dark_white_bg"><img src="images/laptop1.png" alt="#" /></div>
+                  <h3>MSI Katana GF66 Core i5 12th Gen</h3><br>
+                  <a href="https://amzn.to/41e3T7C" target="_blank"><button class="amazon">shop on amazon
+                        ₹70,990</button></a>
+                  <a href="https://www.flipkart.com/msi-katana-gf66-core-i5-12th-gen-16-gb-512-gb-ssd-windows-11-home-4-graphics-nvidia-geforce-rtx-3050-ti-144-hz-12ud-472in-gaming-laptop/p/itm0f7beb23c3a47?pid=COMGEY8WAEQYU5ZP&lid=LSTCOMGEY8WAEQYU5ZPXVBGRT&marketplace=FLIPKART&q=msi+laptop&store=6bo%2Fb5g&srno=s_1_8&otracker=search&otracker1=search&fm=Search&iid=4d7bfedd-3a76-448b-83c2-b3331cd0d5f6.COMGEY8WAEQYU5ZP.SEARCH&ppt=sp&ppn=sp&ssid=y49wkulwow0000001681045474089&qH=a78e1dc0934db8a3"
+                     target="_blank"><button class="flipkart">shop on flipkart ₹72,990</button></a>
+               </div>
+
+               <div class="project_box">
+                  <div class="dark_white_bg"><img src="images/mouse1.png" alt="#" /></div>
+                  <h3>Logitech G502 Wired Gaming Mouse</h3><br>
+                  <a href="https://amzn.to/3GtCSF6" target="_blank"><button class="amazon">shop on amazon ₹4,095
+                     </button></a>
+                  <a href="https://www.flipkart.com/logitech-g502-hero-25k-sensor-adj-dpi-upto-25600-rgb-11-programmable-buttons-wired-optical-gaming-mouse/p/itma269dc20e3570?pid=ACCFUJC6N8ZCHESF&lid=LSTACCFUJC6N8ZCHESFGMWWLO&marketplace=FLIPKART&q=Logitech+G502&store=4rr%2Fkm5&srno=s_1_1&otracker=search&otracker1=search&fm=Search&iid=01e27ed7-5b72-463d-8a93-f3832237a055.ACCFUJC6N8ZCHESF.SEARCH&ppt=sp&ppn=sp&ssid=z39tju93340000001681045837349&qH=f7018efdcc5d8aa4"
+                     target="_blank"><button class="flipkart">shop on flipkart ₹4,095
+                     </button></a>
+               </div>
+
+
+               <div class="project_box ">
+                  <div class="dark_white_bg"><img src="images/mobile4.png" alt="#" /></div>
+                  <h3>Apple iPhone 13 (128GB)- (Product) RED</h3><br>
+                  <a href="https://amzn.to/3Mq4rTx" target="_blank"><button class="amazon">shop on amazon
+                        ₹62,999</button></a>
+                  <a href="https://www.flipkart.com/apple-iphone-13-product-red-128-gb/p/itm99b5658d148b0?pid=MOBG6VF59ZFEPEBX&lid=LSTMOBG6VF59ZFEPEBXH3IWCE&marketplace=FLIPKART&sattr[]=color&sattr[]=storage&st=color"
+                     target="_blank"><button class="flipkart">shop on flipkart ₹62,999</button></a>
+               </div>
+
+               <div class="project_box ">
+                  <div class="dark_white_bg"><img src="images/mobile2.png" alt="#" /></div>
+                  <h3>OnePlus Nord CE 2 Lite 5G (6 GB RAM, 128 GB)</h3><br>
+                  <a href="https://amzn.to/3zLLDqg" target="_blank"><button class="amazon">shop on amazon
+                        ₹18,999</button></a>
+                  <a href="https://www.flipkart.com/oneplus-nord-ce-2-lite-5g-blue-tide-128-gb/p/itm7acae55b999e6?pid=MOBGMFREBAHZQGY9&lid=LSTMOBGMFREBAHZQGY93P3KBS&marketplace=FLIPKART&q=oneplus+mobile&store=tyy%2F4io&spotlightTagId=BestsellerId_tyy%2F4io&srno=s_1_3&otracker=AS_QueryStore_OrganicAutoSuggest_3_5_na_na_na&otracker1=AS_QueryStore_OrganicAutoSuggest_3_5_na_na_na&fm=search-autosuggest&iid=a735edc3-572f-4b9d-8784-f42a6d0e8f42.MOBGMFREBAHZQGY9.SEARCH&ppt=sp&ppn=sp&ssid=d6ew1pn7r40000001681039641108&qH=9f1419b282422384"
+                     target="_blank"><button class="flipkart">shop on flipkart ₹19,595</button></a>
+               </div>
+
+               <div class="project_box">
+                  <div class="dark_white_bg"><img src="images/mobile3.png" alt="#" /></div>
+                  <h3>APPLE iPad (9th Gen) 64 GB ROM(Space Grey)</h3><br>
+                  <a href="https://www.amazon.in/Apple-10-2-inch-25-91-Bionic-Wi-Fi/dp/B09G9CVML5?crid=13HYXLN76JOPK&keywords=APPLE%2BiPad%2B%289th%2BGen%29%2B64%2BGB%2BROM%2B10.2%2Binch%2Bwith%2BWi-Fi%2BOnly%2B%28Space%2BGrey%29&qid=1681039849&sprefix=apple%2Bipad%2B9th%2Bgen%2B64%2Bgb%2Brom%2B10.2%2Binch%2Bwith%2Bwi-fi%2Bonly%2Bspace%2Bgrey%2B%2Caps%2C184&sr=8-1&th=1&linkCode=sl1&tag=gaminiverseaf-21&linkId=a57b32fad3f3f852710047e9dbdf02dd&language=en_IN&ref_=as_li_ss_tl"
+                     target="_blank"><button class="amazon">shop on amazon ₹30,900</button></a>
+                  <a href="https://www.flipkart.com/apple-ipad-9th-gen-64-gb-rom-10-2-inch-wi-fi-only-space-grey/p/itmd7d2c4840fa04?pid=TABG6VNCHTRZGN9N&lid=LSTTABG6VNCHTRZGN9NIK0OLT&marketplace=FLIPKART&q=ipad&store=tyy%2Fhry&spotlightTagId=BestsellerId_tyy%2Fhry&srno=s_1_1&otracker=search&otracker1=search&fm=Search&iid=1f0b7d24-01f7-450d-b328-570c531e90d5.TABG6VNCHTRZGN9N.SEARCH&ppt=sp&ppn=sp&ssid=ju70s10i5c0000001681039835108&qH=09401fded433c347"
+                     target="_blank"><button class="flipkart">shop on flipkart ₹30,900</button></a>
+               </div>
+
+               <div class="project_box">
+                  <div class="dark_white_bg"><img src="images/headphone1.png" alt="#" /></div>
+                  <h3>SONY WH-CH510 Bluetooth Headset(Black)</h3><br>
+                  <a href="https://amzn.to/43kQfkI" target="_blank"><button class="amazon">shop on amazon
+                        ₹2,990</button></a>
+                  <a href="https://www.flipkart.com/sony-wh-ch510-google-assistant-enabled-bluetooth-headset/p/itm9ae0f115c1fa5?pid=ACCFKYCBAETWPBZX&lid=LSTACCFKYCBAETWPBZXWKEHLT&marketplace=FLIPKART&q=Sony+Wh-Ch510+Bluetooth&store=0pm%2Ffcn&srno=s_1_1&otracker=search&otracker1=search&fm=Search&iid=dc6a58ff-fb48-494a-951c-26ea47aa683e.ACCFKYCBAETWPBZX.SEARCH&ppt=sp&ppn=sp&ssid=n0ce1yizsg0000001681040490619&qH=3834c5501ab198a5"
+                     target="_blank"><button class="flipkart">shop on flipkart ₹2,990</button></a>
+               </div>
+
+               <div class="project_box">
+                  <div class="dark_white_bg"><img src="images/mic1.png" alt="#" /></div>
+                  <h3>BOYA BY-M800 Microphone</h3><br>
+                  <a href="https://amzn.to/3ZVEKNI" target="_blank"><button class="amazon">shop on amazon
+                        ₹6,200</button></a>
+                  <a href="https://www.flipkart.com/boya-by-m800-microphone/p/itm7269d1dfc7dfd?pid=MICGYFA5WJYXXP8A&lid=LSTMICGYFA5WJYXXP8AS2QMNC&marketplace=FLIPKART&q=boya+mic&store=search.flipkart.com&srno=s_1_17&otracker=search&otracker1=search&fm=Search&iid=735b452e-f5a6-4875-82aa-31f8334278b8.MICGYFA5WJYXXP8A.SEARCH&ppt=sp&ppn=sp&ssid=8vt652kahs0000001681040743460&qH=b46697f48cb14d06"
+                     target="_blank"><button class="flipkart">shop on flipkart ₹5,897</button></a>
+               </div>
+
+               <div class="col-md-12">
+                  <a class="read_more" href="products.html">See More</a>
+               </div>
+            </div>
+         </div>
+      </div>
+   </div>
+   <!-- end project section -->
+   <!-- fashion section -->
+   <div class="fashion">
+      <img src="images/fashion.jpg" alt="#" />
+   </div>
+   <!-- end fashion section -->
+   <!-- news section -->
+   <div class="news">
+      <div class="container">
+         <div class="row">
+            <div class="col-md-12">
+               <div class="titlepage">
+                         <h2>Letest News</h2>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+      <!-- news section -->
+      <div class="news">
+         <div class="container">
+            <div class="row">
+               <div class="col-md-12 margin_top40">
+                  <div class="row d_flex">
+                     <div class="col-md-5">
+                        <div class="news_img">
+                           <figure><img src="images/news_img1.jpg"></figure>
+                        </div>
+                     </div>
+                     <div class="col-md-7">
+                        <div class="news_text">
+                           <h3>April Fools’ Day 2023: ROG Ally</h3>
+                           <span>1 April 2023</span> 
+
+                           <p>During this period, even the technology industry goes to extremes with their April Fools’ Day jokes. Annually, the creative minds at leading technology firms utilize their imagination to devise the most remarkable and unusual concepts and inventions. Let us delve in and witness these tech companies have to offer this year! ASUS has come up with ROG Ally, a gaming handheld console, to take on the Steam Deck for April Fools’ Day. “Taking your PC games out of your gaming room is no longer a fantasy!” says the company. Several users are asking ASUS to make it a reality.</p>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+               <div class="col-md-12 margin_top40">
+                  <div class="row d_flex">
+                     <div class="col-md-5">
+                        <div class="news_img">
+                           <figure><img src="images/news_img2.jpg"></figure>
+                        </div>
+                     </div>
+                     <div class="col-md-7">
+                        <div class="news_text">
+                           <h3>Patek Philippe Looks Beyond Nautilus and a Prototype Is Ready</h3>
+                           <span>20 April 2023</span> 
+                         
+                           <p>Patek Philippe SA will soon introduce a new model line for the first time in nearly a quarter century, a fresh offering that the head of the family-owned Swiss watchmaker expects could one day compete with its most desirable timepieces.</p>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+               <div class="col-md-12 margin_top40">
+                  <div class="row d_flex">
+                     <div class="col-md-5">
+                        <div class="news_img">
+                           <figure><img src="images/news_img3.jpg"></figure>
+                        </div>
+                     </div>
+                     <div class="col-md-7">
+                        <div class="news_text">
+                           <h3>Check out these Flipkart Upcoming Sales in 2023</h3>
+                           <span>20 April 2023</span> 
+        
+                           <p>The Flipkart Electronic Day Sale will go live from May 24, 2023, to May 29, 2023. Moreover, you can avail of discounts on various categories: Laptops, television, smartwatches, smartphones and other accessories. In addition, Flipkart also offers discounts on select products through its Bank Offers, Exchange Offers, and No-Cost EMIs. Customers can make the most of this Flipkart upcoming sale by keeping an eye out for the best deals and discounts available on the website.</p>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+   <!-- end news section -->
+   <!-- newslatter section -->
+   <div class="newslatter">
+      <div class="container">
+         <div class="row d_flex">
+            <div class="col-md-5">
+               <h3 class="neslatter">Subscribe To The Newsletter</h3>
+            </div>
+            <div class="col-md-7">
+               <form class="news_form">
+                  <input class="letter_form" placeholder=" Enter your email" type="text" name="Enter your email">
+                  <button class="sumbit">Subscribe</button>
+               </form>
+            </div>
+         </div>
+      </div>
+   </div>
+   <!-- end newslatter section -->
+   <!-- three_box section -->
+   <div class="three_box">
+      <div class="container">
+         <div class="row">
+            <div class="col-md-4">
+               <div class="gift_box">
+                  <i><img src="images/icon_mony.png"></i>
+                  <span>Money Back</span>
+               </div>
+            </div>
+            <div class="col-md-4">
+               <div class="gift_box">
+                  <i><img src="images/icon_gift.png"></i>
+                  <span>Special Gift</span>
+               </div>
+            </div>
+            <div class="col-md-4">
+               <div class="gift_box">
+                  <i><img src="images/icon_car.png"></i>
+                  <span>Free Shipping</span>
+               </div>
+            </div>
+         </div>
+      </div>
+   </div>
+   <!-- end three_box section -->
+
+   <!--  footer -->
+   <footer>
+      <div class="footer">
+         <div class="container">
+            <div class="row">
+               <div class="col-md-3">
+                  <div class="inror_box">
+                     <h3>Contact Us </h3>
+                     <p>To contact us visit support@romofyi.com</p>
+                  </div>
+               </div>
+               <div class="col-md-3">
+                  <div class="inror_box">
+                     <h3>MY ACCOUNT </h3>
+                     <p>Create your free account on romofyi and make your shopping experiance easy. </p>
+                  </div>
+               </div>
+               <div class="col-md-3">
+                  <div class="inror_box">
+                     <h3>ABOUT Us</h3>
+                     <p>Romofyi serves you to check the prices of same product on different unicorn e-commerce websites for you to make your online purchasing service go simple.
+                       </p>
+                  </div>
+               </div>
+               <div class="col-md-3">
+                  <div class="inror_box">
+                     <h3>Blogs</h3>
+                     <p>Romofyi also ofers you Trending blogs to stay updated with the Trend.</p>
+                  </div>
+               </div>
+            </div>
+         </div>
+         <div class="copyright">
+            <div class="container">
+               <div class="row">
+                  <div class="col-md-12">
+                     <p>© 2023 All Rights Reserved. Design by <a href="https://html.design/">Romofyi.com</a></p>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+   </footer>
+   <!-- end footer -->
+   <!-- Javascript files-->
+   <script src="js/jquery.min.js"></script>
+   <script src="js/popper.min.js"></script>
+   <script src="js/bootstrap.bundle.min.js"></script>
+   <script src="js/jquery-3.0.0.min.js"></script>
+   <!-- sidebar -->
+   <script src="js/jquery.mCustomScrollbar.concat.min.js"></script>
+   <script src="js/custom.js"></script>
+</body>
+
+</html>
